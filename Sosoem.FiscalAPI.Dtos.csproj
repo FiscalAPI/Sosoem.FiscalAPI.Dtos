@@ -1,9 +1,27 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Pacs\Sw\InvoiceCancelation\Input\" />
+    <Folder Include="Pacs\Sw\InvoiceCancelation\Output\" />
+    <Folder Include="Pacs\Sw\InvoiceRelated\Input\" />
+    <Folder Include="Pacs\Sw\InvoiceRelated\Output\" />
+    <Folder Include="Pacs\Sw\InvoiceRetrieving\Input\" />
+    <Folder Include="Pacs\Sw\InvoiceRetrieving\Output\" />
+    <Folder Include="Pacs\Sw\InvoiceValidation\Input\" />
+    <Folder Include="Pacs\Sw\InvoiceValidation\Output\" />
+    <Folder Include="Pacs\Sw\Invoice\Input\" />
+    <Folder Include="Pacs\Sw\Invoice\Output\" />
+    <Folder Include="Pacs\Sw\List69B\Input\" />
+    <Folder Include="Pacs\Sw\List69B\Output\" />
+    <Folder Include="Pacs\Sw\Users\Input\" />
+    <Folder Include="Pacs\Sw\Users\Output\" />
+  </ItemGroup>
 
 </Project>
