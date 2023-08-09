@@ -8,6 +8,8 @@
 
   <ItemGroup>
     <Folder Include="Common\" />
+    <Folder Include="Pacs\Sw\Balance\Input\" />
+    <Folder Include="Pacs\Sw\Balance\Output\" />
     <Folder Include="Pacs\Sw\InvoiceCancelation\Input\" />
     <Folder Include="Pacs\Sw\InvoiceCancelation\Output\" />
     <Folder Include="Pacs\Sw\InvoiceRelated\Input\" />
