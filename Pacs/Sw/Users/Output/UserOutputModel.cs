@@ -1,7 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 
 namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.Users.Output;
-
+/// <summary>
+/// 
+/// </summary>
 public class UserOutputModel
 {
     [JsonPropertyName("stamps")] public int Stamps { get; set; }
