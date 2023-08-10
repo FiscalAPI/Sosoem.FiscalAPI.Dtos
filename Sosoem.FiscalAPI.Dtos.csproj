@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -10,9 +10,11 @@
     <Copyright>SOSOEM All rights reserved. </Copyright>
     <RepositoryUrl>https://github.com/FiscalAPI/Sosoem.FiscalAPI.Dtos.git</RepositoryUrl>
     <PackageTags>FiscalAPI-Invoice-SAT-CFDI40-CFDI</PackageTags>
-    <AssemblyVersion>4.0.8</AssemblyVersion>
+    <AssemblyVersion>4.0.9</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <Version>$(AssemblyVersion)</Version>
+	  <PackageIcon>SOSOEM.png</PackageIcon>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -30,5 +32,17 @@
     <Folder Include="Pacs\Sw\List69B\Input\" />
     <Folder Include="Pacs\Sw\List69B\Output\" />
   </ItemGroup>
+
+ 
+
+  <ItemGroup>
+    <None Update="SOSOEM.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="SOSOEM.png" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 </Project>
