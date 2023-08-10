@@ -39,4 +39,3 @@ public class ChildInvoice
     [JsonPropertyName("rfcReceptor")] public string RecipientTin { get; set; } = string.Empty;
 }
 
-}

@@ -4,6 +4,14 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>Contiene todos los DTOs para consumir el SDK de FiscalAPI - Contains all the DTOs to consume the FiscalAPI SDK.</Title>
+    <Authors>SOSOEM</Authors>
+    <Description>Contiene todos los DTOs para consumir el SDK de FiscalAPI - Contains all the DTOs to consume the FiscalAPI SDK.</Description>
+    <Copyright>SOSOEM All rights reserved. </Copyright>
+    <RepositoryUrl>https://github.com/FiscalAPI/Sosoem.FiscalAPI.Dtos.git</RepositoryUrl>
+    <PackageTags>FiscalAPI-Invoice-SAT-CFDI40-CFDI</PackageTags>
+    <AssemblyVersion>4.0.7</AssemblyVersion>
+    <FileVersion>$(AssemblyVersion)</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
