@@ -29,6 +29,9 @@ jobs:
 
     - name: Pack
       run: dotnet pack --no-build -c Release -o out
+      
+    - name: Verifica si la clave API de NuGet está configurada
+      run: if [ -z "${{ secrets.NUGET_TOKEN }}" ]; then echo "NUGET_API_KEY no está configurada"; else echo "NUGET_API_KEY está configurada"; fi
 
     - name: Push NuGet Package
       run: dotnet nuget push out/*.nupkg --api-key ${{secrets.NUGET_TOKEN}} --source https://api.nuget.org/v3/index.json
