@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.Authentication.Input
+﻿namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.Authentication.Input
 {
     public class AuthenticationInputModel
     {

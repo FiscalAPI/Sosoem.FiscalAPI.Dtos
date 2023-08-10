@@ -16,7 +16,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Common\" />
+    <Folder Include="Extensions\Web\" />
     <Folder Include="Pacs\Sw\InvoiceCancelation\Input\" />
     <Folder Include="Pacs\Sw\InvoiceCancelation\Output\" />
     <Folder Include="Pacs\Sw\InvoiceRelated\Input\" />

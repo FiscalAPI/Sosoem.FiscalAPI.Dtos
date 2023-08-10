@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.InvoiceRetrieving.Input;
+﻿namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.InvoiceRetrieving.Input;
 
 public class InvoiceRetrieveInputModel
 {

@@ -1,6 +1,4 @@
-﻿using System.Text.Json.Serialization;
-
-namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.List69B.Input;
+﻿namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.List69B.Input;
 
 public class List69InputModel
 {

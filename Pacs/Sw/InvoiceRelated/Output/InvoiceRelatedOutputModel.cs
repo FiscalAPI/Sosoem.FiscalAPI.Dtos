@@ -1,5 +1,4 @@
 ﻿using System.Text.Json.Serialization;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.InvoiceRelated.Output;
 
