@@ -12,6 +12,7 @@
     <PackageTags>FiscalAPI-Invoice-SAT-CFDI40-CFDI</PackageTags>
     <AssemblyVersion>4.0.7</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
+    <Version>$(AssemblyVersion)</Version>
   </PropertyGroup>
 
   <ItemGroup>
