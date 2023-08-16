@@ -1,4 +1,6 @@
-﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Complements.Payment;
+﻿using Sosoem.FiscalAPI.Dtos.Invoicing.Input;
+
+namespace Sosoem.FiscalAPI.Dtos.Invoicing.Complements.Payment.Input;
 
 /// <summary>
 /// Payment invoice

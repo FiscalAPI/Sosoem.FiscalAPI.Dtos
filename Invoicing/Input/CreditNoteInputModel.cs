@@ -1,4 +1,4 @@
-﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing;
+﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
 public class CreditNoteInputModel : InvoiceInputModel
 {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Sosoem.FiscalAPI.Dtos.Invoicing.Complements.Payment;
+namespace Sosoem.FiscalAPI.Dtos.Invoicing.Complements.Payment.Input;
 
 /// <summary>
 /// Elemento: Pagos > Elemento: Pago

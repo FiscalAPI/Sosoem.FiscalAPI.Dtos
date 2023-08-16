@@ -1,4 +1,4 @@
-﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing;
+﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 /// <summary>
 /// Nodo requerido para expresar la información del contribuyente emisor del comprobante
 /// </summary>

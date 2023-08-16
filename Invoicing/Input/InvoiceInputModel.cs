@@ -1,6 +1,6 @@
 ﻿using Sosoem.FiscalAPI.Dtos.Credentials;
 
-namespace Sosoem.FiscalAPI.Dtos.Invoicing;
+namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
 /// <summary>
 /// Invoice itselft.

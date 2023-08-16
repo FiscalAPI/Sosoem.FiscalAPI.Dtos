@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Xml.Serialization;
 
-namespace Sosoem.FiscalAPI.Dtos.Invoicing;
+namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 /// <summary>
 /// Nodo requerido para listar los conceptos cubiertos por el comprobante.
 /// </summary>

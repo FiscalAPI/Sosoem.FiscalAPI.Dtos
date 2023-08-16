@@ -1,4 +1,4 @@
-﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Complements.Payment;
+﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Complements.Payment.Input;
 
 /// <summary>
 /// Elemento: DoctoRelacionado
