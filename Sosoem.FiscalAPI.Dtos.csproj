@@ -19,16 +19,6 @@
 
   <ItemGroup>
     <Folder Include="Invoicing\Complements\Payment\Output\" />
-    <Folder Include="Pacs\Sw\InvoiceCancelation\Input\" />
-    <Folder Include="Pacs\Sw\InvoiceCancelation\Output\" />
-    <Folder Include="Pacs\Sw\InvoiceRelated\Input\" />
-    <Folder Include="Pacs\Sw\InvoiceRelated\Output\" />
-    <Folder Include="Pacs\Sw\InvoiceRetrieving\Input\" />
-    <Folder Include="Pacs\Sw\InvoiceRetrieving\Output\" />
-    <Folder Include="Pacs\Sw\InvoiceValidation\Input\" />
-    <Folder Include="Pacs\Sw\InvoiceValidation\Output\" />
-    <Folder Include="Pacs\Sw\List69B\Input\" />
-    <Folder Include="Pacs\Sw\List69B\Output\" />
   </ItemGroup>
 
  
