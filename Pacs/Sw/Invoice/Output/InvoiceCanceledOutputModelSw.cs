@@ -1,6 +1,4 @@
 ﻿using System.Text.Json.Serialization;
-using Sosoem.FiscalAPI.Dtos.Extensions;
-using Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
 namespace Sosoem.FiscalAPI.Dtos.Pacs.Sw.Invoice.Output;
 

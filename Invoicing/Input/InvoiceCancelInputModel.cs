@@ -1,5 +1,4 @@
 ﻿using Sosoem.FiscalAPI.Dtos.Credentials;
-using Sosoem.FiscalAPI.Dtos.Pacs.Sw.Invoice.Input;
 
 namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
