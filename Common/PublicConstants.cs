@@ -1,6 +1,6 @@
 ﻿namespace Sosoem.FiscalAPI.Dtos.Common;
 
-public static class GlobalConstants
+public static class PublicConstants
 {
     public const string SatDateFormat = "yyyy-MM-ddTHH:mm:ss";
     public const string SatInvoiceNationalTin = "XAXX010101000";

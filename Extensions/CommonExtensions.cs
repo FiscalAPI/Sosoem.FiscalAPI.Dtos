@@ -23,7 +23,7 @@ public static class CommonExtensions
         return isSatFormat;
     }
 
-    public static bool ToSucceeded(this string str) => str.ToLower().Trim().Equals(GlobalConstants.Success);
+    public static bool ToSucceeded(this string str) => str.ToLower().Trim().Equals(PublicConstants.Success);
 
     #endregion
 
@@ -79,7 +79,7 @@ public static class CommonExtensions
 
     public static string ToSatFormat(this DateTime dateTime)
     {
-        return dateTime.ToString(GlobalConstants.SatDateFormat);
+        return dateTime.ToString(PublicConstants.SatDateFormat);
     }
 
     public static decimal ToSatRounding(this decimal value, int decimalPlaces = 6,
