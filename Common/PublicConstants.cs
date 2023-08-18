@@ -15,20 +15,6 @@ public static class PublicConstants
     public const string SatPaymentObjectId = "01"; //No objeto de impuesto).;
 
 
-    #region HttpClients
-
-    public const string ServicesBaseAddressTest = "https://services.test.sw.com.mx";
-    public const string ServicesBaseAddressProd = "https://services.sw.com.mx";
-    public const string ApiBaseAddressTest = "http://api.test.sw.com.mx";
-    public const string ApiBaseAddressProd = "https://api.sw.com.mx";
-
-    public const string ServicesHttpClientNameTest = "ServicesHttpClientNameTest";
-    public const string ServicesHttpClientNameProd = "ServicesHttpClientNameProd";
-    public const string ApiHttpClientNameTest = "ApiHttpClientNameTest";
-    public const string ApiHttpClientNameProd = "ApiHttpClientNameProd";
-
-    #endregion
-
     public const string Success = "success";
     public const string Error = "error";
 }
