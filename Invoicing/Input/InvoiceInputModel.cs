@@ -8,10 +8,21 @@ namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 public class InvoiceInputModel
 {
     /// <summary>
+    /// TipoDeComprobante
+    /// Atributo requerido para expresar la clave del efecto del comprobante fiscal para el contribuyente emisor.
+    /// I	Ingreso
+    /// E	Egreso
+    /// T	Traslado
+    /// N	Nómina
+    /// P	Pago
+    /// </summary>
+    public string? InvoiceTypeCode { get; set; }
+
+    /// <summary>
     /// Version
     /// Atributo requerido con valor prefijado a 4.0 que indica la versión del estándar bajo el que se encuentra expresado el comprobante.
     /// </summary>
-    public string? InvoiceVersion { get; set; }
+    public string? Version { get; set; }
 
 
     /// <summary>
@@ -19,13 +30,13 @@ public class InvoiceInputModel
     /// Atributo opcional para precisar la serie para control interno del contribuyente.
     /// Este atributo acepta una cadena de caracteres.
     /// </summary>
-    public string? InvoiceSerie { get; set; }
+    public string? Series { get; set; }
 
     /// <summary>
     /// Folio
     /// Atributo opcional para control interno del contribuyente que expresa el folio del comprobante, acepta una cadena de caracteres.
     /// </summary>
-    public string? InvoiceNuber { get; set; }
+    public string? Number { get; set; }
 
 
     /// <summary>
@@ -34,8 +45,14 @@ public class InvoiceInputModel
     /// Debe corresponder con la hora local donde se expide el comprobante.
     /// Format YYYY-MM-DDThh:mm:ss
     /// </summary>
-    public string? InvoiceDate { get; set; }
+    public string? Date { get; set; }
 
+
+    /// <summary>
+    /// UsoCFDI
+    /// Atributo requerido para expresar la clave del uso que dará a esta factura el receptor del CFDI.
+    /// </summary>
+    public string? InvoiceUseCode { get; set; }
 
     /// <summary>
     /// FormaPago
@@ -67,12 +84,21 @@ public class InvoiceInputModel
 
 
     /// <summary>
-    /// CondicionesDePago
+    /// Unofficial payment conditions
+    /// C000	"Contado"
+    /// C001	"Anticipado"
+    /// C007	"7 Dias"
+    /// C015	"15 Dias"
+    /// C030	"30 Dias"
+    /// C045	"45 Dias"
+    /// C060	"60 Dias"
+    /// C090	"90 Dias"
+    /// C120	"120 Dias"
     /// Atributo condicional para expresar las condiciones comerciales aplicables para el pago del comprobante fiscal digital por Internet. Este atributo puede ser condicionado mediante atributos o complementos.
     /// </summary>
-    public string? PaymentConditions { get; set; }
+    public string? PaymentConditionCode { get; set; }
 
-
+    
     /// <summary>
     /// Moneda
     /// Atributo requerido para identificar la clave de la moneda utilizada para expresar los montos, cuando se usa moneda nacional se registra MXN. Conforme con la especificación ISO 4217.
@@ -91,17 +117,10 @@ public class InvoiceInputModel
     /// </summary>
     public decimal ExchangeRate { get; set; }
 
-
     /// <summary>
-    /// TipoDeComprobante
-    /// Atributo requerido para expresar la clave del efecto del comprobante fiscal para el contribuyente emisor.
-    /// I	Ingreso
-    /// E	Egreso
-    /// T	Traslado
-    /// N	Nómina
-    /// P	Pago
+    /// Este campo se calculará automaticamente a partir de los decuentos de los items.
     /// </summary>
-    public string? InvoiceTypeCode { get; set; }
+    public decimal Discount { get; set; }
 
 
     /// <summary>
@@ -135,14 +154,14 @@ public class InvoiceInputModel
     /// Emisor
     /// Nodo requerido para expresar la información del contribuyente emisor del comprobante.
     /// </summary>
-    public InvoiceIssuerInputModel? InvoiceIssuer { get; set; }
+    public PersonInputModel? InvoiceIssuer { get; set; }
 
 
     /// <summary>
     /// Receptor
     /// Nodo requerido para precisar la información del contribuyente receptor del comprobante.
     /// </summary>
-    public InvoiceRecipientInputModel? InvoiceRecipient { get; set; }
+    public PersonInputModel? InvoiceRecipient { get; set; }
 
     /// <summary>
     /// Conceptos
