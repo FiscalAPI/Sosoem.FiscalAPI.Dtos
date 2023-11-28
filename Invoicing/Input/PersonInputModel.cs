@@ -17,7 +17,7 @@ public class PersonInputModel
     public string LegalName { get; set; } = string.Empty;
 
     /// <summary>
-    /// DomicilioFiscalReceptor
+    /// Código postal del domicilio fiscal.
     /// Atributo requerido para registrar el código postal del domicilio fiscal del receptor del comprobante.
     /// </summary>
     public string ZipCode { get; set; } = string.Empty;

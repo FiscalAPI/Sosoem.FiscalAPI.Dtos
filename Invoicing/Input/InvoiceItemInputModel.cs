@@ -57,7 +57,7 @@ public class InvoiceItemInputModel
     /// ValorUnitario
     /// Atributo requerido para precisar el valor o precio unitario del bien o servicio cubierto por el presente concepto.
     /// </summary>
-    public decimal UnitCost { get; set; }
+    public decimal UnitPrice { get; set; }
 
     //public decimal Amount { get; set; }
 
@@ -70,8 +70,11 @@ public class InvoiceItemInputModel
     public decimal Discount { get; set; }
 
     /// <summary>
-    /// ObjetoImp
     /// Atributo requerido para expresar si la operación comercial es objeto o no de impuesto.
+    /// 01	No objeto de impuesto.
+    /// 02	Sí objeto de impuesto.
+    /// 03	Sí objeto del impuesto y no obligado al desglose.
+    /// 04	Sí objeto del impuesto y no causa impuesto.
     /// </summary>
     public string? TaxObjectCode { get; set; }
 

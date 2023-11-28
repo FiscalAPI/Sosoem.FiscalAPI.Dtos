@@ -48,12 +48,7 @@ public class InvoiceInputModel
     public string? Date { get; set; }
 
 
-    /// <summary>
-    /// UsoCFDI
-    /// Atributo requerido para expresar la clave del uso que dará a esta factura el receptor del CFDI.
-    /// </summary>
-    public string? InvoiceUseCode { get; set; }
-
+   
     /// <summary>
     /// FormaPago
     /// Atributo condicional para expresar la clave de la forma de pago de los bienes o servicios amparados por el comprobante.
@@ -117,11 +112,6 @@ public class InvoiceInputModel
     /// </summary>
     public decimal ExchangeRate { get; set; }
 
-    /// <summary>
-    /// Este campo se calculará automaticamente a partir de los decuentos de los items.
-    /// </summary>
-    public decimal Discount { get; set; }
-
 
     /// <summary>
     /// MetodoPago
@@ -132,12 +122,7 @@ public class InvoiceInputModel
     public string? PaymentMethodCode { get; set; }
 
 
-    /// <summary>
-    /// LugarExpedicion
-    /// Atributo requerido para incorporar el código postal del lugar de expedición del comprobante (domicilio de la matriz o de la sucursal).
-    /// </summary>
-    public string? ExpeditionZipCode { get; set; }
-
+  
 
     /// <summary>
     /// Exportacion
@@ -176,7 +161,7 @@ public class InvoiceInputModel
     /// with which the invoice is authenticated and signed.
     /// <see cref="CredentialInputModel"/>
     /// </summary>
-    public List<CredentialInputModel>? Credentials { get; set; }
+   // public List<CredentialInputModel>? Credentials { get; set; }
 
 
     /// <summary>
