@@ -5,7 +5,7 @@ public class InvoiceSignedOutputModel
     /// <summary>
     /// CadenaOriginalSAT
     /// </summary>
-    public string? TaOriginalString { get; set; } = string.Empty;
+    public string? Base64TaOriginalString { get; set; } = string.Empty;
 
     /// <summary>
     /// noCertificadoSAT
@@ -25,12 +25,12 @@ public class InvoiceSignedOutputModel
     /// <summary>
     /// selloSAT
     /// </summary>
-    public string? TaSignatureValue { get; set; } = string.Empty;
+    public string? Base64TaSignatureValue { get; set; } = string.Empty;
 
     /// <summary>
     /// selloCFDI
     /// </summary>
-    public string? InvoiceSignatureValue { get; set; } = string.Empty;
+    public string? Base64InvoiceSignatureValue { get; set; } = string.Empty;
 
     /// <summary>
     /// fechaTimbrado
@@ -40,10 +40,10 @@ public class InvoiceSignedOutputModel
     /// <summary>
     /// Qr Code
     /// </summary>
-    public string? InvoiceQrCode { get; set; } = string.Empty;
+    public string? Base64InvoiceQrCode { get; set; } = string.Empty;
 
     /// <summary>
     /// Valid invoice in base 64
     /// </summary>
-    public string? InvoiceBase64 { get; set; } = string.Empty;
+    public string? Base64Invoice { get; set; } = string.Empty;
 }

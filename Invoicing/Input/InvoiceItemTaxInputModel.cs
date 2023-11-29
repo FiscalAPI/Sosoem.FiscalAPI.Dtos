@@ -56,5 +56,5 @@ public class InvoiceItemTaxInputModel
     /// R: When the tax is a withholding tax.
     /// The default value is T TaxFlag
     /// </summary>
-    public string? TaxFlag { get; set; } 
+    public string? TaxFlagCode { get; set; } 
 }
