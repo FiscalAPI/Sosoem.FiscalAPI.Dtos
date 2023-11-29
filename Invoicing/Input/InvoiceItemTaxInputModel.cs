@@ -5,14 +5,6 @@ namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 public class InvoiceItemTaxInputModel
 {
     /// <summary>
-    /// Base
-    /// Atributo requerido para señalar la base para el cálculo del impuesto, la determinación de la base se realiza de acuerdo con las disposiciones fiscales vigentes.
-    /// No se permiten valores negativos.
-    /// </summary>
-    public decimal Base { get; set; }
-
-
-    /// <summary>
     /// Impuesto
     /// Atributo requerido para señalar la clave del tipo de impuesto trasladado aplicable al concepto.
     /// 001	ISR
@@ -62,7 +54,7 @@ public class InvoiceItemTaxInputModel
     /// Accepts two values the letter 'T' or the letter 'R'
     /// T: When the tax is a transferred tax.
     /// R: When the tax is a withholding tax.
-    /// The default value is T
+    /// The default value is T TaxFlag
     /// </summary>
-    public string NatureOfTax { get; set; } = "T";
+    public string? TaxFlag { get; set; } 
 }

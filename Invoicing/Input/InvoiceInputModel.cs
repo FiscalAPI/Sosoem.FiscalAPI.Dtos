@@ -1,6 +1,4 @@
-﻿using Sosoem.FiscalAPI.Dtos.Credentials;
-
-namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
+﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
 /// <summary>
 /// Invoice itselft.
@@ -45,7 +43,7 @@ public class InvoiceInputModel
     /// Debe corresponder con la hora local donde se expide el comprobante.
     /// Format YYYY-MM-DDThh:mm:ss
     /// </summary>
-    public string? Date { get; set; }
+    public string Date { get; set; } = null!;
 
 
    
@@ -154,14 +152,6 @@ public class InvoiceInputModel
     /// </summary>
 
     public List<InvoiceItemInputModel> InvoiceItems { get; set; } = new();
-
-    /// <summary>
-    /// A list of files of type TaxAuthorityCredentialFileDto.
-    /// Which represent the .cer and .key files of the tax authority in Mexico,
-    /// with which the invoice is authenticated and signed.
-    /// <see cref="CredentialInputModel"/>
-    /// </summary>
-   // public List<CredentialInputModel>? Credentials { get; set; }
 
 
     /// <summary>

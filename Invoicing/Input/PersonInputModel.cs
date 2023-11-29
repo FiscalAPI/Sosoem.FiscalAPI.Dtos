@@ -4,6 +4,9 @@ namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
 public class PersonInputModel
 {
+
+    public string? Uuid { get; set; }
+
     /// <summary>
     /// Rfc
     /// Atributo requerido para registrar la Clave del Registro Federal de Contribuyentes correspondiente al contribuyente receptor del comprobante.
