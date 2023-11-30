@@ -1,8 +1,4 @@
-﻿using Sosoem.FiscalAPI.Dtos.Invoicing.Input;
-using System.ComponentModel;
-using System.Xml.Serialization;
-
-namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
+﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
 
 /// <summary>
