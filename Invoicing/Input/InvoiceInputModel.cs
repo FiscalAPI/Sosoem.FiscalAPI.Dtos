@@ -1,10 +1,18 @@
-﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
+﻿using Sosoem.FiscalAPI.Dtos.Common;
+
+namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
 /// <summary>
 /// Invoice itselft.
 /// </summary>
 public class InvoiceInputModel
 {
+    /// <summary>
+    /// Request metadata.
+    /// This property will be setup internally by the API itselft.
+    /// </summary>
+    public MetadataInputModel? Metadata { get; set; }
+
     /// <summary>
     /// TipoDeComprobante
     /// Atributo requerido para expresar la clave del efecto del comprobante fiscal para el contribuyente emisor.
@@ -43,10 +51,10 @@ public class InvoiceInputModel
     /// Debe corresponder con la hora local donde se expide el comprobante.
     /// Format YYYY-MM-DDThh:mm:ss
     /// </summary>
-    public string Date { get; set; } = null!;
+    //public string Date { get; set; } = null!;
+    public DateTime Date { get; set; }
 
 
-   
     /// <summary>
     /// FormaPago
     /// Atributo condicional para expresar la clave de la forma de pago de los bienes o servicios amparados por el comprobante.
@@ -91,7 +99,7 @@ public class InvoiceInputModel
     /// </summary>
     public string? PaymentConditionCode { get; set; }
 
-    
+
     /// <summary>
     /// Moneda
     /// Atributo requerido para identificar la clave de la moneda utilizada para expresar los montos, cuando se usa moneda nacional se registra MXN. Conforme con la especificación ISO 4217.
@@ -119,8 +127,6 @@ public class InvoiceInputModel
     /// </summary>
     public string? PaymentMethodCode { get; set; }
 
-
-  
 
     /// <summary>
     /// Exportacion
