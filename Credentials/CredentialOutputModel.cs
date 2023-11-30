@@ -5,7 +5,8 @@ namespace Sosoem.FiscalAPI.Dtos.Credentials;
 
 public class CredentialOutputModel
 {
-    public string CredentialId { get; set; } = string.Empty;
+    public string Id { get; set; } = string.Empty;
+    public string PersonId { get; set; } = string.Empty;
     public string TaxIdentificationNumber { get; set; } = string.Empty;
     public string Base64File { get; set; } = string.Empty;
     public FileType FileType { get; set; }
