@@ -1,6 +1,4 @@
-﻿using System.ComponentModel;
-
-namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
+﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
 public class InvoiceItemTaxOutputModel
 {

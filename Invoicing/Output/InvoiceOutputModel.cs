@@ -1,6 +1,4 @@
-﻿using Sosoem.FiscalAPI.Dtos.Invoicing.Input;
-
-namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
+﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
 
 /// <summary>
