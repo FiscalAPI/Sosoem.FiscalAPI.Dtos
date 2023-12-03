@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using System.Text.RegularExpressions;
 using Sosoem.FiscalAPI.Dtos.Common;
 
@@ -21,6 +22,18 @@ public static class CommonExtensions
         var isSatFormat = extracted.Any();
 
         return isSatFormat;
+    }
+    public static bool IsSatFormat(this DateTime dateTime)
+    {
+        // Define el formato esperado
+        var format = "yyyy-MM-ddTHH:mm:ss";
+
+        // Convierte la fecha a cadena con el formato esperado
+        var formattedDate = dateTime.ToString(format);
+
+        // Intenta parsear la fecha formateada de nuevo a DateTime
+        // Si se parsea correctamente y el resultado es igual a la fecha original, el formato es correcto
+        return DateTime.TryParseExact(formattedDate, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedDate) && parsedDate == dateTime;
     }
 
     public static bool ToSucceeded(this string str) => str.ToLower().Trim().Equals(PublicConstants.Success);

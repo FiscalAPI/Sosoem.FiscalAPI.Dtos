@@ -51,7 +51,6 @@ public class InvoiceInputModel
     /// Debe corresponder con la hora local donde se expide el comprobante.
     /// Format YYYY-MM-DDThh:mm:ss
     /// </summary>
-    //public string Date { get; set; } = null!;
     public DateTime Date { get; set; }
 
 
