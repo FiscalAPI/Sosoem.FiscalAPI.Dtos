@@ -44,7 +44,7 @@ public class InvoiceOutputModel
     /// Debe corresponder con la hora local donde se expide el comprobante.
     /// Format YYYY-MM-DDThh:mm:ss
     /// </summary>
-    public string Date { get; set; } = null!;
+    public DateTime Date { get; set; }
 
 
 
@@ -120,6 +120,52 @@ public class InvoiceOutputModel
     /// </summary>
     public string? PaymentMethodCode { get; set; }
 
+    /// <summary>
+    /// uuid
+    /// </summary>
+    public string? InvoiceUuid { get; set; } = string.Empty;
+
+    /// <summary>
+    /// CadenaOriginalSAT
+    /// </summary>
+    public string? Base64TaOriginalString { get; set; } = string.Empty;
+
+    /// <summary>
+    /// noCertificadoSAT
+    /// </summary>
+    public string? TaCertificateNumber { get; set; } = string.Empty;
+
+    /// <summary>
+    /// noCertificadoCFDI
+    /// </summary>
+    public string? InvoiceCertificateNumber { get; set; } = string.Empty;
+
+
+    /// <summary>
+    /// selloSAT
+    /// </summary>
+    public string? Base64TaSignatureValue { get; set; } = string.Empty;
+
+    /// <summary>
+    /// selloCFDI
+    /// </summary>
+    public string? Base64InvoiceSignatureValue { get; set; } = string.Empty;
+
+    /// <summary>
+    /// fechaTimbrado
+    /// </summary>
+    public string? InvoiceSignatureDate { get; set; } = string.Empty;
+
+
+    /// <summary>
+    /// Qr Code image in base64
+    /// </summary>
+    public string? Base64InvoiceQrCode { get; set; } = string.Empty;
+
+    /// <summary>
+    /// Signed CFDI by the SAT in base 64
+    /// </summary>
+    public string? Base64Invoice { get; set; } = string.Empty;
 
 
 
@@ -152,7 +198,7 @@ public class InvoiceOutputModel
     /// Nodo requerido para listar los conceptos cubiertos por el comprobante.
     /// </summary>
 
-    public List<InvoiceItemOutputModel> InvoiceItems { get; set; } = new();
+    public List<InvoiceItemOutputModel> Items { get; set; } = new();
 
 
     /// <summary>
