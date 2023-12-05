@@ -3,6 +3,11 @@
 public class InvoiceSignedOutputModel
 {
     /// <summary>
+    /// FiscalAPI invoice's Id
+    /// </summary>
+    public string? Id { get; set; }
+
+    /// <summary>
     /// CadenaOriginalSAT
     /// </summary>
     public string? Base64TaOriginalString { get; set; } = string.Empty;

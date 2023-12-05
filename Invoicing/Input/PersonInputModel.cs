@@ -2,10 +2,10 @@
 
 namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
-public class PersonInputModel
+public class PersonInputModel 
 {
 
-    public string? Uuid { get; set; }
+    public string? Id { get; set; }
 
     /// <summary>
     /// Rfc

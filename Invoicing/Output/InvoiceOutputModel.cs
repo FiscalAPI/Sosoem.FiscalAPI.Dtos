@@ -6,6 +6,12 @@
 /// </summary>
 public class InvoiceOutputModel
 {
+
+    /// <summary>
+    /// FiscalAPI Invoice's Id.
+    /// </summary>
+    public string Id { get; set; }
+
     /// <summary>
     /// TipoDeComprobante
     /// Atributo requerido para expresar la clave del efecto del comprobante fiscal para el contribuyente emisor.

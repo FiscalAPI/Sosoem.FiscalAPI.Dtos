@@ -4,7 +4,7 @@ namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
 public class PersonOutputModel
 {
-    public string? Uuid { get; set; }
+    public string? Id { get; set; }
 
     /// <summary>
     /// Rfc
