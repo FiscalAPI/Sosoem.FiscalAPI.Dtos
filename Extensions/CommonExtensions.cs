@@ -23,6 +23,7 @@ public static class CommonExtensions
 
         return isSatFormat;
     }
+
     public static bool IsSatFormat(this DateTime dateTime)
     {
         // Define el formato esperado
@@ -33,8 +34,21 @@ public static class CommonExtensions
 
         // Intenta parsear la fecha formateada de nuevo a DateTime
         // Si se parsea correctamente y el resultado es igual a la fecha original, el formato es correcto
-        return DateTime.TryParseExact(formattedDate, format, CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedDate) && parsedDate == dateTime;
+        return DateTime.TryParseExact(formattedDate, format, CultureInfo.InvariantCulture, DateTimeStyles.None,
+            out DateTime parsedDate) && parsedDate == dateTime;
     }
+
+
+    public static bool IsValidTin(this string rfc)
+    {
+        // Patrones para los RFCs
+        const string patternPm = @"^[A-Z&Ñ]{3}[0-9]{2}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])[A-Z0-9]{2}[0-9A]$";
+        const string patternPf = @"^[A-Z&Ñ]{4}[0-9]{2}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])[A-Z0-9]{2}[0-9A]$";
+
+        // Verifica si el RFC coincide con alguno de los patrones
+        return Regex.IsMatch(rfc, patternPm) || Regex.IsMatch(rfc, patternPf);
+    }
+
 
     public static bool ToSucceeded(this string str) => str.ToLower().Trim().Equals(PublicConstants.Success);
 
@@ -102,7 +116,4 @@ public static class CommonExtensions
     }
 
     #endregion
-
-
-
 }
