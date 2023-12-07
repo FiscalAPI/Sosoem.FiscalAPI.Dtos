@@ -1,17 +1,10 @@
-﻿using Sosoem.FiscalAPI.Dtos.Common;
-
-namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
+﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
 /// <summary>
 /// Invoice itselft.
 /// </summary>
 public class InvoiceInputModel
 {
-    /// <summary>
-    /// Request metadata.
-    /// This property will be setup internally by the API itselft.
-    /// </summary>
-    public MetadataInputModel? Metadata { get; set; }
 
     /// <summary>
     /// TipoDeComprobante

@@ -1,12 +1,10 @@
 ﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
-
 /// <summary>
 /// Invoice output DTO.
 /// </summary>
 public class InvoiceOutputModel
 {
-
     /// <summary>
     /// FiscalAPI Invoice's Id.
     /// </summary>
@@ -51,7 +49,6 @@ public class InvoiceOutputModel
     /// Format YYYY-MM-DDThh:mm:ss
     /// </summary>
     public DateTime Date { get; set; }
-
 
 
     /// <summary>
@@ -131,6 +128,12 @@ public class InvoiceOutputModel
     /// </summary>
     public string? InvoiceUuid { get; set; } = string.Empty;
 
+    public decimal SubTotal { get; set; }
+    public decimal Discount { get; set; }
+    public decimal Taxes { get; set; }
+    public decimal Total { get; set; }
+
+
     /// <summary>
     /// CadenaOriginalSAT
     /// </summary>
@@ -172,7 +175,6 @@ public class InvoiceOutputModel
     /// Signed CFDI by the SAT in base 64
     /// </summary>
     public string? Base64Invoice { get; set; } = string.Empty;
-
 
 
     /// <summary>
@@ -219,4 +221,9 @@ public class InvoiceOutputModel
     /// <value>07	CFDI por aplicación de anticipo</value>
     /// </summary>
     public List<RelatedInvoiceOutputModel> RelatedInvoices { get; set; } = new();
+
+    public DateTime CreatedAt { get; set; }
+    public string CreatedBy { get; set; } = string.Empty;
+    public DateTime? UpdatedAt { get; set; }
+    public string? UpdatedBy { get; set; }
 }

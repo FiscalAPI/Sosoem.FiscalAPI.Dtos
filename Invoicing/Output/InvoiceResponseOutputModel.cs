@@ -1,6 +1,6 @@
 ﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
-public class InvoiceSignedOutputModel
+public class InvoiceResponseOutputModel
 {
     /// <summary>
     /// FiscalAPI invoice's Id
@@ -37,10 +37,6 @@ public class InvoiceSignedOutputModel
     /// </summary>
     public string? Base64InvoiceSignatureValue { get; set; } = string.Empty;
 
-    ///// <summary>
-    ///// fechaTimbrado
-    ///// </summary>
-    //public string? InvoiceSignatureDate { get; set; } = string.Empty;
 
     /// <summary>
     /// fechaTimbrado
