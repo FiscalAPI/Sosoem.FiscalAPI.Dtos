@@ -3,9 +3,12 @@
 public class InvoiceResponseOutputModel
 {
     /// <summary>
-    /// FiscalAPI invoice's Id
+    /// FiscalAPI InvoiceResponse's Id
     /// </summary>
     public string? Id { get; set; }
+
+    public string? InvoiceId { get; set; }
+    public bool Succeeded { get; set; }
 
     /// <summary>
     /// CadenaOriginalSAT

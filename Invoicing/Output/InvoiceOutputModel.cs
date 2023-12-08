@@ -222,6 +222,13 @@ public class InvoiceOutputModel
     /// </summary>
     public List<RelatedInvoiceOutputModel> RelatedInvoices { get; set; } = new();
 
+    /// <summary>
+    /// The invoices raw response, escially usefull for developers.
+    /// It contains everything you need for physical purposes such as the XML, the original string, the stamps, certificate numbers, PDF QR Code, etc.
+    /// 95% of the time it only returns a single response in side the list, it will return an additional response for each retry of stamping with the SAT.
+    /// </summary>
+    public List<InvoiceResponseOutputModel> RawResponses { get; set; } = new();
+
     public DateTime CreatedAt { get; set; }
     public string CreatedBy { get; set; } = string.Empty;
     public DateTime? UpdatedAt { get; set; }

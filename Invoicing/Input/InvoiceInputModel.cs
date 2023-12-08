@@ -5,7 +5,6 @@
 /// </summary>
 public class InvoiceInputModel
 {
-
     /// <summary>
     /// TipoDeComprobante
     /// Atributo requerido para expresar la clave del efecto del comprobante fiscal para el contribuyente emisor.
