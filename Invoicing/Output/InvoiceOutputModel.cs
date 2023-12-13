@@ -134,48 +134,7 @@ public class InvoiceOutputModel
     public decimal Total { get; set; }
 
 
-    /// <summary>
-    /// CadenaOriginalSAT
-    /// </summary>
-    public string? Base64TaOriginalString { get; set; } = string.Empty;
-
-    /// <summary>
-    /// noCertificadoSAT
-    /// </summary>
-    public string? TaCertificateNumber { get; set; } = string.Empty;
-
-    /// <summary>
-    /// noCertificadoCFDI
-    /// </summary>
-    public string? InvoiceCertificateNumber { get; set; } = string.Empty;
-
-
-    /// <summary>
-    /// selloSAT
-    /// </summary>
-    public string? Base64TaSignatureValue { get; set; } = string.Empty;
-
-    /// <summary>
-    /// selloCFDI
-    /// </summary>
-    public string? Base64InvoiceSignatureValue { get; set; } = string.Empty;
-
-    /// <summary>
-    /// fechaTimbrado
-    /// </summary>
-    public string? InvoiceSignatureDate { get; set; } = string.Empty;
-
-
-    /// <summary>
-    /// Qr Code image in base64
-    /// </summary>
-    public string? Base64InvoiceQrCode { get; set; } = string.Empty;
-
-    /// <summary>
-    /// Signed CFDI by the SAT in base 64
-    /// </summary>
-    public string? Base64Invoice { get; set; } = string.Empty;
-
+   
 
     /// <summary>
     /// Exportacion
@@ -228,7 +187,6 @@ public class InvoiceOutputModel
     /// 95% of the time it only returns a single response in side the list, it will return an additional response for each retry of stamping with the SAT.
     /// </summary>
     public List<InvoiceResponseOutputModel> RawResponses { get; set; } = new();
-
     public DateTime CreatedAt { get; set; }
     public string CreatedBy { get; set; } = string.Empty;
     public DateTime? UpdatedAt { get; set; }
