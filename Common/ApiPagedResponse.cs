@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Net;
 
 namespace Sosoem.FiscalAPI.Dtos.Common;
 
@@ -15,7 +11,7 @@ public class ApiPagedResponse<T> : ApiResponse<T>
     public Uri? FirstPage { get; set; }
     public Uri? LastPage { get; set; }
     public Uri? NextPage { get; set; }
-    public Uri? PreviousPage { get; set; }
+    public Uri? PrevPage { get; set; }
 
     public ApiPagedResponse(T data, int pageNumber, int pageSize)
     {
@@ -24,5 +20,6 @@ public class ApiPagedResponse<T> : ApiResponse<T>
         Data = data;
         Message = null;
         Succeeded = true;
+        HttpStatusCode = HttpStatusCode.OK;
     }
 }
