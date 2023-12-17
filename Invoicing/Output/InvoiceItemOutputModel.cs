@@ -1,11 +1,15 @@
 ﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
-
 /// <summary>
 /// Nodo requerido para listar los conceptos cubiertos por el comprobante.
 /// </summary>
 public class InvoiceItemOutputModel
 {
+    /// <summary>
+    /// FiscalAPI Invoice item's Id.
+    /// </summary>
+    public string Id { get; set; }
+
     /// <summary>
     /// ClaveProdServ
     /// Atributo requerido para expresar la clave del producto o del servicio amparado por el presente concepto. Es requerido y deben utilizar las claves del catálogo de productos y servicios, cuando los conceptos que registren por sus actividades correspondan con dichos conceptos.
@@ -75,7 +79,6 @@ public class InvoiceItemOutputModel
     /// </summary>
     public string? TaxObjectCode { get; set; }
 
-    
 
     /// <summary>
     /// Impuestos

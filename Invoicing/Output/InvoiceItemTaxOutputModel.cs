@@ -3,6 +3,11 @@
 public class InvoiceItemTaxOutputModel
 {
     /// <summary>
+    /// FiscalAPI Invoice item tax's Id.
+    /// </summary>
+    public string Id { get; set; }
+
+    /// <summary>
     /// Impuesto
     /// Atributo requerido para señalar la clave del tipo de impuesto trasladado aplicable al concepto.
     /// 001	ISR
