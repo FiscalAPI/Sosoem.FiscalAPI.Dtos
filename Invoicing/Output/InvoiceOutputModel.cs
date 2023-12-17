@@ -1,4 +1,6 @@
-﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
+﻿using System;
+
+namespace Sosoem.FiscalAPI.Dtos.Invoicing.Output;
 
 /// <summary>
 /// Invoice output DTO.
@@ -134,8 +136,6 @@ public class InvoiceOutputModel
     public decimal Total { get; set; }
 
 
-   
-
     /// <summary>
     /// Exportacion
     /// Atributo requerido para expresar si el comprobante ampara una operación de exportación.
@@ -147,12 +147,17 @@ public class InvoiceOutputModel
     public string? ExportCode { get; set; } = "01";
 
 
+    public string IssuerTin { get; set; } = string.Empty;
+    public string IssuerLegalName { get; set; } = string.Empty;
+
     /// <summary>
     /// Emisor
     /// Nodo requerido para expresar la información del contribuyente emisor del comprobante.
     /// </summary>
     public PersonOutputModel? InvoiceIssuer { get; set; }
 
+    public string RecipientTin { get; set; } = string.Empty;
+    public string RecipientLegalName { get; set; } = string.Empty;
 
     /// <summary>
     /// Receptor
@@ -187,6 +192,7 @@ public class InvoiceOutputModel
     /// 95% of the time it only returns a single response in side the list, it will return an additional response for each retry of stamping with the SAT.
     /// </summary>
     public List<InvoiceResponseOutputModel> RawResponses { get; set; } = new();
+
     public DateTime CreatedAt { get; set; }
     public string CreatedBy { get; set; } = string.Empty;
     public DateTime? UpdatedAt { get; set; }
