@@ -79,7 +79,7 @@ public class InvoiceItemOutputModel
     /// </summary>
     public string? TaxObjectCode { get; set; }
 
-
+    //public decimal Total  { get; set; }
     /// <summary>
     /// Impuestos
     /// Nodo condicional para capturar los impuestos aplicables al presente concepto.

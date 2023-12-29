@@ -16,6 +16,8 @@ public class InvoiceItemTaxOutputModel
     /// </summary>
     public string? TaxCode { get; set; }
 
+    public string? Tax { get; set; }
+
     /// <summary>
     /// TipoFactor
     /// Atributo requerido para señalar la clave del tipo de factor que se aplica a la base del impuesto.
