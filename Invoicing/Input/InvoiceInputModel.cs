@@ -6,6 +6,12 @@
 public class InvoiceInputModel
 {
     /// <summary>
+    /// invoiceId and invoiceUuid
+    /// </summary>
+    public string? Id { get; set; }
+
+
+    /// <summary>
     /// TipoDeComprobante
     /// Atributo requerido para expresar la clave del efecto del comprobante fiscal para el contribuyente emisor.
     /// I	Ingreso
@@ -163,4 +169,6 @@ public class InvoiceInputModel
     /// <value>07	CFDI por aplicación de anticipo</value>
     /// </summary>
     public List<RelatedInvoiceInputModel> RelatedInvoices { get; set; } = new();
+
+   
 }
