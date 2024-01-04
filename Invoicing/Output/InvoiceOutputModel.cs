@@ -128,6 +128,9 @@ public class InvoiceOutputModel
     /// </summary>
     public string? InvoiceUuid { get; set; } = string.Empty;
 
+    public string InvoiceStatus { get; set; }
+    public string? InvoiceCancellationStatus { get; set; }
+
     public decimal SubTotal { get; set; }
     public decimal Discount { get; set; }
     public decimal Taxes { get; set; }

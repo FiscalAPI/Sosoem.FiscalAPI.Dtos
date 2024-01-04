@@ -5,6 +5,9 @@
 /// </summary>
 public class InvoiceInputModel
 {
+
+    public int Source { get; set; } = 0;
+
     /// <summary>
     /// invoiceId and invoiceUuid
     /// </summary>
@@ -154,7 +157,7 @@ public class InvoiceInputModel
     /// Nodo requerido para listar los conceptos cubiertos por el comprobante.
     /// </summary>
 
-    public List<InvoiceItemInputModel> InvoiceItems { get; set; } = new();
+    public List<InvoiceItemInputModel>? InvoiceItems { get; set; } = new();
 
 
     /// <summary>
@@ -168,7 +171,7 @@ public class InvoiceInputModel
     /// <value>06	Factura generada por los traslados previos</value>
     /// <value>07	CFDI por aplicación de anticipo</value>
     /// </summary>
-    public List<RelatedInvoiceInputModel> RelatedInvoices { get; set; } = new();
+    public List<RelatedInvoiceInputModel>? RelatedInvoices { get; set; } = new();
 
    
 }
