@@ -1,4 +1,6 @@
-﻿namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
+﻿using Sosoem.FiscalAPI.Dtos.Common;
+
+namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 
 /// <summary>
 /// Invoice itselft.
@@ -170,5 +172,5 @@ public class InvoiceInputModel
     /// </summary>
     public List<RelatedInvoiceInputModel> RelatedInvoices { get; set; } = new();
 
-   
+    public RequestSource Source { get; set; }
 }
