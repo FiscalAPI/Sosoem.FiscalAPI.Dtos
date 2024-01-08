@@ -7,8 +7,7 @@ namespace Sosoem.FiscalAPI.Dtos.Invoicing.Input;
 /// </summary>
 public class InvoiceInputModel
 {
-
-    public int Source { get; set; } = 0;
+    public SourceRequest SourceRequest { get; set; }
 
     /// <summary>
     /// invoiceId and invoiceUuid
@@ -174,6 +173,4 @@ public class InvoiceInputModel
     /// <value>07	CFDI por aplicación de anticipo</value>
     /// </summary>
     public List<RelatedInvoiceInputModel>? RelatedInvoices { get; set; } = new();
-
-    public RequestSource Source { get; set; }
 }
